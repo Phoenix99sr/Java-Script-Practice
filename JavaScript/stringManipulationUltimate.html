@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script Practice</title>
+    <link rel="stylesheet" href="./stringManipulationUltimate.css" />
+    <script
+      src="https://kit.fontawesome.com/58b48c372b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body">
+    <div class="total_content">
+      <div class="social">
+        <div class="comma">
+          <i class="fa-solid fa-quote-left fa-2x"></i>
+        </div>
+        <div class="quote" style="text-align: center">
+          <h3>
+            Measuring programming progree<br />
+            by lines of code is like measuring<br />
+            aircraft building progree by weight<br /><br />
+            -- Bill Gates
+          </h3>
+        </div>
+        <div class="comma" style="position: relative">
+          <i class="fa-solid fa-quote-right fa-2x"></i>
+        </div>
+        <div class="social_context" style="height: 100px">
+          <h3>Share Your Output Here...</h3>
+          <br />
+          <div class="social_icons">
+            <i class="fa-solid fa-link fa-2x"></i>
+            <i class="fa-brands fa-square-facebook fa-2x"></i>
+            <i class="fa-brands fa-square-instagram fa-2x"></i>
+            <i class="fa-brands fa-square-whatsapp fa-2x"></i>
+            <i class="fa-brands fa-square-twitter fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="section1">
+          <div class="icon">
+            <a href="https://www.w3schools.com/html/default.asp"
+              ><i class="fa-brands fa-html5 fa-2x"></i
+            ></a>
+            <a href="https://www.w3schools.com/css/default.asp"
+              ><i class="fa-brands fa-css3-alt fa-2x"></i
+            ></a>
+            <a href="https://www.w3schools.com/js/default.asp"
+              ><i class="fa-brands fa-js fa-2x"></i
+            ></a>
+
+            <a
+              href="https://github.com/Phoenix99sr/Java-Script-Practice/tree/main/JavaScript"
+              ><i class="fa-brands fa-github fa-2x"></i
+            ></a>
+          </div>
+          <div class="search-box">
+            <input
+              type="text"
+              class="input-search"
+              placeholder="Write a String..."
+              id="input"
+            />
+          </div>
+        </div>
+
+        <div class="btns">
+          <button class="btn" onclick="stringManupulation('initial')">
+            Default
+          </button>
+          <button class="btn" onclick="stringManupulation('reversed')">
+            Reversed
+          </button>
+          <button class="btn" onclick="stringManupulation('reversedWithin')">
+            Reversed Within
+          </button>
+          <button class="btn" onclick="stringManupulation('fullyReversed')">
+            Fully Reversed
+          </button>
+        </div>
+
+        <div class="section2">
+          <div class="output_textbox">
+            <input
+              type="text"
+              class="output_String"
+              placeholder="Your Output Will Show Here..."
+              id="output"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./stringManipulationUltimate.js"></script>
+  </body>
+</html>

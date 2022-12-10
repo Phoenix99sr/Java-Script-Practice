@@ -1,11 +1,11 @@
 function stringManupulation(method) {
   const statement = document.getElementById("input").value;
-  function commonMethod(x, y) {
-    x.map((letter) => {
-      const rev = letter.split("").reverse().join("");
-      y.push(rev.toString());
+  function commonMethod(collectionOfWords, finalArray) {
+    collectionOfWords.map((letter) => {
+      const reverseCase = letter.split("").reverse().join("");
+      finalArray.push(reverseCase.toString());
     });
-    return (result = document.getElementById("output").value = y.join(" "));
+    return (document.getElementById("output").value = finalArray.join(" "));
   }
   let result;
   switch (method) {
@@ -14,21 +14,21 @@ function stringManupulation(method) {
       break;
 
     case "reversed":
-      const wordCollection = statement.split(" ").reverse().join(" ");
-      result = document.getElementById("output").value =
-        wordCollection.toString();
+      result = document.getElementById("output").value = statement
+        .split(" ")
+        .reverse()
+        .join(" ")
+        .toString();
       break;
 
     case "reversedWithin":
-      const collectonOfWordswithin = statement.split(" ");
       const finalwithin = [];
-      commonMethod(collectonOfWordswithin, finalwithin);
+      commonMethod(statement.split(" "), finalwithin);
       break;
 
     case "fullyReversed":
-      const fullyReversedCollection = statement.split(" ").reverse();
       const final = [];
-      commonMethod(fullyReversedCollection, final);
+      commonMethod(statement.split(" ").reverse(), final);
       break;
   }
   return result;

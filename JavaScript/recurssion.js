@@ -1,5 +1,5 @@
 function commonFunction(method) {
-  let word = document.getElementById("input1").value;
+  let word = toLowerCase(document.getElementById("input1").value);
   let n = document.getElementById("input2").value;
 
   switch (method) {
